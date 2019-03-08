@@ -8,10 +8,9 @@ server.get("/", async (req, res) => {
   res.status(200).json({ api: "up" });
 });
 
+server.post("/", async (req, res) => {
 
-server.post('/', async (req, res) => {
-  res.status(201).json({ api: "up" });
-})
+  res.status(201).json({ message: "game added successfully"});
+});
 
-
-module.exports = server
+module.exports = server;
